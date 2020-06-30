@@ -113,7 +113,7 @@ CREATE TABLE Sells_at(
 	PRIMARY KEY (emp_id,pharmacy_no)
 )	
 
-CREATE TABLE Contains(
+CREATE TABLE Contains_Med(
 	pharmacy_no int FOREIGN KEY REFERENCES Pharmacy(pharmacy_no),
 	medicine_no int FOREIGN KEY REFERENCES Medicine(medicine_no),
 	PRIMARY KEY (pharmacy_no,medicine_no)
