@@ -1,2 +1,4 @@
 # DBMS_Project_SQL_script
-A script to construct sql relations designed in dbms project.
+A script to construct sql relations designed in dbms project.  
+
+Note this will only work on MS-SQL servers
