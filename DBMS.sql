@@ -134,3 +134,8 @@ CREATE TABLE PRESCRIBES(
 	FOREIGN KEY (doctor_emp_id) REFERENCES DOCTOR(doctor_emp_id),
 	FOREIGN KEY (patient_no) REFERENCES PATIENT(patient_no)
 )
+
+CREATE TABLE Rides(
+	patient_no int FOREIGN KEY REFERENCES Patient(patient_no),
+	ambulance_id int FOREIGN KEY REFERENCES Ambulance(ambulance_id)
+)
