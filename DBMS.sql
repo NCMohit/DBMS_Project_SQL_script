@@ -131,7 +131,7 @@ CREATE TABLE PRESCRIBES(
 	medicine_no int,
 	dosage int,
 	PRIMARY KEY (doctor_emp_id,patient_no),
-	FOREIGN KEY (doctor_emp_id) REFERENCES DOCTOR(doctor_emp_id),
+	FOREIGN KEY (doctor_emp_id) REFERENCES DOCTOR(emp_id),
 	FOREIGN KEY (patient_no) REFERENCES PATIENT(patient_no)
 )
 
