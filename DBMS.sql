@@ -124,3 +124,13 @@ CREATE TABLE Takes(
 	medicine_no int FOREIGN KEY REFERENCES Medicine(medicine_no),
 	PRIMARY KEY (patient_no,medicine_no)
 )
+
+CREATE TABLE PRESCRIBES(
+	doctor_emp_id int,
+	patient_no int,
+	medicine_no int,
+	dosage int,
+	PRIMARY KEY (doctor_emp_id,patient_id),
+	FOREIGN KEY (doctor_emp_id) REFERENCES DOCTOR(doctor_emp_id),
+	FOREIGN KEY (patient_no) REFERENCES PATIENT(patient_no)
+)
